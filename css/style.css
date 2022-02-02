@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+
+
+/* sezione visuale */
+
+.container-section{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.view-btn{
+    background-color: #4a4a4a;
+    padding: 3px 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
