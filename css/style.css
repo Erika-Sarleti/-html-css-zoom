@@ -25,13 +25,13 @@ body{
 }
 .view{
     justify-content: flex-end;
-    height: 50px;
-    align-items: flex-start;
+    height: 30px;
+    align-items: center;
 }
 .view-btn{
     background-color: #4a4a4a;
     padding: 3px 5px;
-    margin: 5px;
+    margin: 3px;
     border-radius: 5px;
 }
 
@@ -39,19 +39,19 @@ body{
 
 
 .users{
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap; 
-    height: 80vh;  
+    height: calc(100vh - 36px - 70px - 100px);  
     width: 90%;
-    margin: 0 auto;
+    margin: 50px auto;
     overflow-y: auto;
     
     
 }
 .user-item{
     min-width: 250px;
-    width: calc(100% / 7);
+    flex-basis: calc(100% / 7);
     margin: .5em .2em;
     display: flex;
     align-items: flex-end;
@@ -75,8 +75,8 @@ img{
 /* barra di navigazione */
 
 .settings{
-    margin-top: 20px;
-    height: 7vh;
+
+    height:70px;
     background-color: #222222;
     display: flex;
     justify-content: space-between;
@@ -84,11 +84,19 @@ img{
 
 .setting-section{
     display:flex;
-    justify-content: space-around;
-    
+    flex-grow: 1;
 
 }
+.left{
+    justify-content: flex-start;
+}
+.center{
+    justify-content:center;
+}
+.right{
+    justify-content: flex-end;
 
+}
 .button{
     display: flex;
     justify-content: space-between;
@@ -119,8 +127,6 @@ img{
     align-items: center;
     background-color: #4a4a4a;
     font-size: 12px;
-
-    /* flex basis sbagliato */
-    flex-basis: 100px;
+    flex-basis: 200px;
     color: #f00a18;
 }
